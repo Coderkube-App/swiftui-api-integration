@@ -1,0 +1,26 @@
+name: SwiftUI-api-integration
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: 16.0
+targets:
+  APIIntegrationBoilerplate:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: 
+      - path: App
+      - path: Core
+      - path: Data
+      - path: DI
+      - path: Domain
+      - path: Presentation
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.APIIntegrationBoilerplate
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
+        DEVELOPMENT_ASSET_PATHS: '"Resources"'
