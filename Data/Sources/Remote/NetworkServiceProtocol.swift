@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2026 Coderkube Technologies - SwiftUICleanArchitectureApp. All rights reserved.
+// Copyright (c) 2026 Coderkube Technologies - Swiftui-api-integration-boilerplate. All rights reserved.
 //
 
 import Foundation
@@ -21,7 +21,7 @@ public struct DefaultNetworkService: NetworkServiceProtocol {
     let (data, response) = try await session.data(from: url)
     
     guard let httpResponse = response as? HTTPURLResponse,
-            (200...299).contains(httpResponse.statusCode) else {
+          (200...299).contains(httpResponse.statusCode) else {
       throw URLError(.badServerResponse)
     }
     
