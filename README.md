@@ -56,7 +56,7 @@ public class DIContainer {
 1. **Clone the repository**
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Coderkube-App/swiftui-api-integration.git
 ```
 
 2. **Generate Xcode Project**
